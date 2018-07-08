@@ -1,0 +1,14 @@
+<h2>{{title}}</h2>
+        <ul>
+            <li *ngFor= "let movie of movies" (click) = "selectedMovie(movie)">
+            {{movie}}
+            </li>
+        </ul>
+<h3>Recently Added Movie : {{recentMovie}}</h3>
+
+<h2>CART</h2>
+        <ul>
+            <li *ngFor= "let item of cart">
+            {{item}}
+            </li>
+        </ul>

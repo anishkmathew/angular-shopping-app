@@ -1,26 +1,22 @@
-import { AuthorService } from './author.service';
-import { CoursesService } from './courses.service';
+import { MoviesService } from './movies.service';
+import { MoviesComponent } from './movies/movies.component';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { CoursesComponent } from './courses.component';
-import { CourseComponent } from './course/course.component';
-import { AuthorsComponent } from './authors/authors.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoursesComponent,
-    CourseComponent,
-    AuthorsComponent
+    MoviesComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [
-    CoursesService,
-    AuthorService
+    MoviesService
   ],
   bootstrap: [AppComponent]
 })
